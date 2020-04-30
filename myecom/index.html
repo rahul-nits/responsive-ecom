@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>myEcom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/myecom.css">
+</head>
+<body>
+	<div class="navbar">MY E-Com</div>
+	<div class="sec1">
+		<div class="sec11">
+			<img src="img/aata.jpg">
+		</div>
+		<div class="sec12">
+			<h3 style="font-size: x-large;" id="aata"></h3>
+			<legend style="font-weight: bold;">Rs: <span id="price"></span></legend>
+			<br>
+			Pack Sizes: <br>
+			<div class="button" id="myDIV">
+			  <button class="btn active" onclick="change10()">10kg Rs: 399</button>
+			  <button class="btn" onclick="change5()">5kg Rs: 209</button>
+			</div>
+			<br>
+			<legend>Quantity:</legend>
+			<form>
+			  <div class="buttonruller value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+			  <input class="buttonruller buttonstyle" type="number" id="number" value="1" />
+			  <div class="value-button buttonruller" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+			</form>
+			<br>
+			<p onclick="payable()" style="font-size: 20px;"><span style="background: #1592e6; border-radius: 50%; padding: 10px;">Payable</span> Rs: <span style="color: green;" id="value"></span></p>
+		</div>
+	</div>
+	
+	<div class="sec2">
+		<div class="sec21">
+			<div class="sec211"><img src="img/masala.jpg"></div>
+			<!-- <br> -->
+			<div class="sec212"><h2>Masala Spices and Cooking Paste</h2></div>
+		</div>
+		<div class="sec22 flex-container">
+			<div class="flex-hori">
+				<div class="sec221">
+						<img class="smallimg" src="img/aata-floor.jpg" >
+						<legend>Aata and Floor</legend>
+				</div>
+				<div class="sec222">
+						<img src="img/oil.jpg" class="smallimg">
+						<legend>Oil and It's Products</legend>				
+				</div>	
+			</div>
+			<div class="flex-hori">
+				<div class="sec223">
+					<img src="img/daal.jpg" class="smallimg">
+					<legend>Daal and it's Products</legend>
+				</div>
+				<div class="sec224">
+					<img src="img/rice.jpg" class="smallimg">
+					<legend>Rice and It's Products</legend>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/myecom.js"></script>
+</body>
+</html>
